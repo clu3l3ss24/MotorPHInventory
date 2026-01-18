@@ -28,17 +28,4 @@ public class SearchUtils {
         }
         return null;
     }
-
-    public static void searchByStatus(ArrayList<Stock> inventory, String status) {
-        boolean found = false;
-        for (Stock s : inventory) {
-            if (s.getStatus().equalsIgnoreCase(status)) {
-                System.out.println("Found: " + s);
-                found = true;
-            }
-        }
-        if (!found) {
-            System.out.println("No stocks found with status: " + status);
-        }
-    }
 }

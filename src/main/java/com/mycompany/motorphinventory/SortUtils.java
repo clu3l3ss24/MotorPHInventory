@@ -18,17 +18,4 @@ public class SortUtils {
             inventory.set(j + 1, key);
         }
     }
-
-    public static void bubbleSortByBrand(ArrayList<Stock> inventory) {
-        int n = inventory.size();
-        for (int i = 0; i < n - 1; i++) {
-            for (int j = 0; j < n - i - 1; j++) {
-                if (inventory.get(j).getBrand().compareToIgnoreCase(inventory.get(j + 1).getBrand()) > 0) {
-                    Stock temp = inventory.get(j);
-                    inventory.set(j, inventory.get(j + 1));
-                    inventory.set(j + 1, temp);
-                }
-            }
-        }
-    }
 }
